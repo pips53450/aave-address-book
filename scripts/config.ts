@@ -17,7 +17,9 @@ import {
   sepolia,
   avalanche,
   base,
+  scrollSepolia,
 } from 'viem/chains';
+
 
 export enum ChainId {
   mainnet = 1,
@@ -40,6 +42,7 @@ export enum ChainId {
   scroll_alpha = 534353,
   metis = 1088,
   base = 8453,
+  scroll_sepolia = 534351,
 }
 
 const RPC_PROVIDERS = {
@@ -153,6 +156,13 @@ const RPC_PROVIDERS = {
   }),
   [ChainId.scroll_alpha]: createPublicClient({
     chain: scrollTestnet,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.scroll_sepolia]: createPublicClient({
+    chain: scrollSepolia,
     transport: http(),
     batch: {
       multicall: true,
