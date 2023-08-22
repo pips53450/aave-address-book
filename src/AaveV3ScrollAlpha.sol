@@ -78,7 +78,7 @@ library AaveV3ScrollAlphaAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x9c41A3E545126Cc2c160634405E00461Ec30F709;
 
-  address internal constant WBTC_UNDERLYING = 0x5EA79f3190ff37418d42F9B2618688494dBD9693;
+  address internal constant WBTC_UNDERLYING = 0x4A6Af6b70B58074Bfd542D24aea0774356D9A2d3;
   address internal constant WBTC_A_TOKEN = 0x43AE2a14AD923915aa85d683D1b7d0d320ae87B2;
   address internal constant WBTC_V_TOKEN = 0x52a011bF32a85D952aa259D85b705b7cF040836f;
   address internal constant WBTC_S_TOKEN = 0x0e78aC6Bf2a391bbBD15C3DEFadeC7B5d9f00343;
